@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffc2dc,
+        #ffbde0
+    );
+}
+
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Video Box */
+.image-box {
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    background: transparent;
+}
+
+
+/* Main Video */
+.image-box video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+     background: transparent;
+
+     border:none;
+     outline:none;
+
+
+    user-select: none;
+    pointer-events: none;
+
+
+}
+
+
+/* Heading */
+h1 {
+    color: #ff3f7f;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    margin-bottom: 8px;
+}
+
+
+/* Sub Text */
+#subText {
+    color: #444;
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Buttons */
+button {
+    border: none;
+
+    padding: 8px 16px;
+
+    font-size: 15px;
+
+    border-radius: 8px;
+
+    background: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.2s ease;
+}
+
+
+/* Yes Button */
+#yesBtn {
+    color: #ff3f7f;
+}
+
+
+/* No Button */
+#noBtn {
+    color: #555;
+}
+
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
+/* Floating Hearts */
+@keyframes heartFloat {
+
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1.4);
+        opacity: 0;
+    }
+}
